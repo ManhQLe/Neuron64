@@ -7,6 +7,7 @@ NN64::RandomWeightProvider::RandomWeightProvider()
 
 double NN64::RandomWeightProvider::GetWeight()
 {
+	srand(time(0));
 	return (double)rand() / RAND_MAX;
 }
 
